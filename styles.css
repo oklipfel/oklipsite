@@ -31,7 +31,7 @@ nav a {
 }
 
 .hero {
-    background-image: url('your-hero-image.jpg');
+    background-image: url('ok_headshot.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -52,7 +52,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -70,31 +70,25 @@ nav ul li ul {
     list-style: none;
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} 
+
+/* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
 }
 
-/* Ensure each dropdown appears on a new line */
-nav ul li.dropdown ul {
-    top: 0;
-    left: 100%;
+/* Style for the dropdown menu items */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7b7b7b;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* Adjust the space between dropdown items */
-nav ul li ul li {
-    margin: 5px 0;
-}
-
-/* Change color of dropdown links on hover */
-nav ul li ul li a:hover {
-    color: #3498db; /* Blue */
-}
-
-/* Style for dropdown indicator */
-nav ul li.dropdown::after {
-    content: '\25BC'; /* Unicode character for down arrow */
-    margin-left: 5px;
-}
-
-/* Adjust position of dropdown indicator */
-nav ul li.dropdown:hover::after {
-    margin-left: 0;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
