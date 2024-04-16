@@ -1,3 +1,4 @@
+/* Overview General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
 
 .container {
     width: 80%;
+    height: 1%;
     margin: 0 auto;
 }
 
@@ -16,6 +18,7 @@ header {
     padding: 20px 0;
 }
 
+/* Styling for the Menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -29,42 +32,12 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
-
-.hero {
-    background-image: url('ok_headshot.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.portfolio {
-    padding: 60px 0;
-}
-
-.about,
-.contact {
-    padding: 40px 0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
 /* Dropdown styling */
 nav ul li ul {
     display: none;
     position: absolute;
-    top: 100%; /* Adjust the distance from the menu item */
-    left: 0; /* Ensure the dropdown starts from the left of the menu item */
+    top: 100%; 
+    left: 0; 
     background-color: #000;
     padding: 10px;
     list-style: none;
@@ -72,14 +45,12 @@ nav ul li ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 } 
 
-/* Style for the dropdown menu */
 .dropdown {
     position: relative;
     display: inline-block;
     
 }
 
-/* Style for the dropdown menu items */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -92,3 +63,44 @@ nav ul li ul {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Styling on all film or photography pages*/
+.portfolio {
+    /* Images or Videos in the Portfolio*/
+        padding: 60px 0;
+    }
+
+
+
+
+
+/* Random Styling */
+
+/* Random Images */
+#Headshot {
+    width: 25%;
+    height: 25%;
+    padding-left: 10%;
+    padding-top: 5%;
+    size-adjust: 30%;
+}
+
+
+.about,
+.contact {
+    padding: 40px 0;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
